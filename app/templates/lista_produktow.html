@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Lista produktów - Uliana Kutylovskaya</title>
+</head>
+
+<body>
+  
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <div class="navbar-header">
+            <a class="navbar-brand" href="#">CeneoWebScraper</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="strona_glowna.html">Strona główna</a></li>
+                <li><a href="ekstrakcja.html">Ekstrakcja opinii</a></li>
+                <li><a href="lista_produktow.html">Lista produktów</a></li>
+                <li><a href="autor.html">O autorze</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="container">
+        <h1 class="text-center">Lista Produktów</h1>
+    </header>
+
+    <table id="example" class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Produkt</th>
+                <th scope="col">Liczba opinii</th>
+                <th scope="col">Lista Zalet</th>
+                <th scope="col">Lista Wad</th>
+                <th scope="col">Średnia Ocena</th>
+                <th scope="col">JSON</th>
+                <th scope="col">Wykresy</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th><a href="96685108.html" class="link">produkt № 96685108</a></th>
+                <td>62</td>
+                <td>43</td>
+                <td>2</td>
+                <td>4.9/5</td>
+                <td><a href="../opinions/96685108.json" class="link">Pobierz JSON</a></td>
+                <td><a href="../opinions/wykresy.html" class="link">Pobierz Wykresy</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <footer class="container text-center mt-5 pt-2 border-top border-white">
+        (c) Kutylovskaya Uliana, Uniwersytet Ekonomiczny w Krakowie
+    </footer>
+      
+</body>
+</html>

@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+        <title>CeneoWebScraper - Kutylovskaya Uliana</title>
+        <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('#example').DataTable();
+            });
+        </script>
+</head>
+
+<body>
+    
+    
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <div class="navbar-header">
+            <a class="navbar-brand" href="#">CeneoWebScraper</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="strona_glowna.html">Strona główna</a></li>
+                <li><a href="ekstrakcja.html">Ekstrakcja opinii</a></li>
+                <li><a href="lista_produktow.html">Lista produktów</a></li>
+                <li><a href="autor.html">O autorze</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="my-5">
+        <table id="example" class="display" style="width:100%">
+            <thead>
+                <td>opinion_id</td>
+                <td>author</td>
+                <td>recommendation</td>
+                <td>score</td>
+                <td>purchased</td>
+                <td>published_at</td>
+                <td>purchased_at</td>
+                <td>thumbs_up</td>
+                <td>thumbs_down</td>
+                <td>content</td>
+                <td>pros</td>
+                <td>cons</td>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>16711712</td>
+                    <td>g...2</td>
+                    <td>Polecam</td>
+                    <td>5/5</td>
+                    <td>Opinia potwierdzona zakupem</td>
+                    <td>2022-11-04 11:51:10</td>
+                    <td>2022-10-16 19:00:54</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>#PromocjaSamsungLaczProduktyDlaWygody
+            Zakup pralki SAMSUNG WW90T534DAE poprzedziłem wnikliwą analizą ogólnej dostępności produktów, poszczególnych marek jak i funkcjonalności poszczególnych modeli. Przejrzałem wiele porównywarek, zestawień typu „top” dla pralek i wybór padł na ten model właśnie. Dlaczego? Oto kilka argumentów: wysokie obroty dla wirowania, jednocześnie świetne wyważenie pralki (jak też łatwośc wypoziomowania), co skutkuje cichą pracą nawet najwyższych obrotach przy wirowaniu, nie wspominając o „zasadniczej” pracy tej pralki. Świetną funkcjonalnością jest automatyczne dozowanie detergentów – uzupełniane pijemników co jakiś czas – oszczędnośc czasu i właściwe dobranie przez pralkę, wręcz generowanie oszczędności. Dodatkowo, można oczywiście ręcznie dodać deregent. Kolejną ciekawą sprawą jest oczywiście sterowanie zdalne przy pomocy smartfona – jak na 21 wiek przystało. Mnogośc programów dedykowanych  do poszczególnych rodzajów prania i tkanin, w tym tych sztucznych. Warte odnotowania jest bardzo niskie zużycie prądu i wody – szczególnie gdy weźmiemy pod uwagę gabaryty pralki – wsad 9kg (praktycznie „normalna” pralka, choć nie zabiera zbyt dużo miejsca jednocześnie). Wspomniany wsad robi mega robotę – dużo rzeczy w jednym praniu – odczuwamy róznicę w stosunku do poprzedniej prali – o 5 kg wsadzie:). Z plusów warto wspomnieć o silniku z wymiennymi łożyskami – na który Samsung daje 10 lat gwarancji. Po niemal 3 tygodniach użytkowania, minusów brak – nawet od żony:)</td>
+                    <td>efektywność,funkcjonalność,głośność pracy,ładowność,stabilność pracy,zużycie energii</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>16035931</td>
+                    <td>p...5</td>
+                    <td>Polecam</td>
+                    <td>5/5</td>
+                    <td>Opinia potwierdzona zakupem</td>
+                    <td>2022-05-03 15:37:17</td>
+                    <td>2022-04-25 21:58:08</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>#akcjalaczproduktydlawygody.
+            
+            Samsung WW90T534DAE
+            Witam 
+            Kupiliśmy wraz z żoną pralkę Samsung model WW90T534DAE. Pralka sama z siebie spisuje się super, jej cicha praca jest znakomita. Duża ilość programów da każdemu znaleść i dopasować swoje pranie. Wygląd pralki daje poczucie nowoczesnego sprzętu, wyświetlacz czytelny. Pralka intuicyjna, pozwala dobrać odpowiedni program do pranych rzeczy, kontakt przez wifi. 
+            Z czystym sumieniem jestemy w stanie polecić ja kupującym. 
+            Praca pralki : 5 gwiazdek 
+            Pojemność : 5 gwiazdek 
+            Wygląd : 5 gwiazdek 
+            Zadowolony klient. 
+            Polecam</td>
+                    <td>efektywność,głośność pracy,ładowność,zużycie energii</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>17391779</td>
+                    <td>Piotr</td>
+                    <td>Polecam</td>
+                    <td>5/5</td>
+                    <td>Opinia potwierdzona zakupem</td>
+                    <td>2023-04-12 18:00:09</td>
+                    <td>2023-04-03 23:32:18</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>Moja dziesięcioletnia pralka niespodziewanie na tydzień przed Wielkanocą postanowiła przenieść się do świata elektrośmieci. W dość krótkim czasie (czego nie lubię) musiałem dokonać wyboru nowej. Wybór zawęziłem do modeli ze skręcanymi zbiornikami i wymiennymi łożyskami. Po setkach przeczytanych opinii, rankingach, wielogodzinnych konfrontacji moich oczekiwań z ofertą producentów, mój wybór padł na Samsung WW90T534DAE/S6. Ostatecznie do wyboru przekonały mnie duża ładowność tego modelu, wysoka klasa energetyczna, cichy silnik inwerterowy, deklarowany niski poziom hałasu przy wirowaniu, duży wybór programów prania oraz automatyka wagowa. Automatyczne dozowniki płynu piorącego i do płukania, ładny wygląd oraz możliwość sterowania pralką zdalnie były miłymi bonusami do dokonanego wyboru. Do pralki był dołączony klucz służący do odkręcenia zabezpieczeń transportowych i do wypoziomowania pralki – niby drobiazg, ale jakże pożądany. Po tygodniu intensywnego użytkowania na plus dla tego modelu: cicha praca w czasie prania oraz wirowania, dobrze działająca automatyka wagowa dostosowująca czas prania do wielkości wsadu, opóźnienie startu ze wskazaniem godziny o której ma się skończyć pranie, bardzo intuicyjna obsługa. Minusów brak, ale chętnie ponarzekam: przyzwyczaiłem się do szerzej otwieranych drzwi, tylko jeden automatyczny dozownik na środek piorący. Podsumowując, bardzo dobry wybór, którego mam nadzieję nie będę żałował po latach użytkowania. #EnergooszczedneUrzadzeniaPromocjaSamsung</td>
+                    <td>efektywność,estetyka,funkcjonalność,głośność pracy,ładowność,zużycie energii</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>16180993</td>
+                    <td>b...s</td>
+                    <td>Polecam</td>
+                    <td>5/5</td>
+                    <td>Opinia potwierdzona zakupem</td>
+                    <td>2022-06-07 19:38:14</td>
+                    <td>2022-05-31 13:18:39</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>#akcjalaczproduktydlawygody. Jestem w szoku. Moja 30 letnia pralka Miele jest cudowna i zawsze była. Teraz tylko Samsung - nie wiem co się stało, ale moje pranie jest &quot;wygładzone&quot; (prałam na programie nocnym). Nie muszę praktycznie prasować. Wiem, co myślą inni: &quot;ooo to następny wpis dla reklamy&quot; - Absolutnie NIE. Podałam hashtaga bo można uzyskać zwrot kilku stówek, a to dla mnie równie ważne jak dobra pralka. Przy poprzedniej pralce  kupiłam watomierz... brała 1,8KWH (30 letnia). Teraz mam wskazania na około 0,4 KWH (nocne pranie). Pobór pomierzyłam w środę - w piątek miałam już nową pralkę. Gatki męża &quot;wyprasowane&quot; (szok); koc - &quot;wyprasowany&quot;; koszulki t-shirt - &quot;wyprasowane&quot;. Nie wiem jeszcze o co chodzi ale efekt jest. Jutro zacznę sprawdzać inne programy. Podobno ta pralka może mieć 9 kg wsadu, ale czy uda mi się tam włożyć kołdrę - nie wiem... Pan w sklepie mówił, że się uda. Inne osoby pisały, że się udało i wszystko zostało super wyprane. Chciałabym tylko podkreślić (czego nie wiedziałam), że bęben zawsze ma tę samą objętość (przy każdej pralce); tu chodzi tylko o wagę wsadu, a nie o ilość...</td>
+                    <td>efektywność,głośność pracy,zużycie energii</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>16861022</td>
+                    <td>s...7</td>
+                    <td>Polecam</td>
+                    <td>5/5</td>
+                    <td>Opinia potwierdzona zakupem</td>
+                    <td>2022-12-10 02:23:21</td>
+                    <td>2022-11-25 20:51:25</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>Witam Wszystkich :). Kupiłem tą pralkę w necie, tylko według opisu, nigdy jej wcześniej nie widziałem w realu. Bardzo mi się podoba. Pierze bardzo bobrze, nie ściemnia jak inne pralki, że coś robi i czeka na c... wie co. Kręci i pierze, nie 3h ale 1,20 lub 1,30 na prostych programach i wszystko czyste i dobrze wypłukane. Odświeżanie 15 min. Parówki jeszcze nie próbowałem. Zapodałem koszule do prania i szok, wrzucam na suszarkę a one nie pogięte, zobaczę jak wyschną. Podoba mi się funkcja dozowania detergentu do prania. Pranie robimy jedno etapowo, nie ma funkcji prania przedwstępnego, bo i nie potrzeby. Ma 3 pojemniki na proszek, płyn piorący i płyn do płukania. Proszek zabiera w całości, według naszego dozowania ale pozostał wybiera automatycznie według wagi i zużycia wody. Tak, ma automatykę wagową, przed pierwszym uruchomieniem musimy ją skalibrować. Jeszcze raz wrócę do płukania. Napełniłem cały zbiorniczek, mniej więcej 2 nakrętki. Zalecana jest jedna na pranie, pralka uznała, że to za dużo i pobierała tylko połowę, więc 4 prania. Szacun za to co robi, wszystko pachnie, nic dodać, nic ująć. Jeszcze jedno. W opakowaniu dostaniecie papierowe nóżki, takie krążki. Są one bardzo pomocne przy przesuwaniu pralki we właściwe miejsce, skorzystajcie z nich. Pozdrawiam Sławek</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>16670967</td>
+                    <td>Szymon</td>
+                    <td>Polecam</td>
+                    <td>5/5</td>
+                    <td>Opinia potwierdzona zakupem</td>
+                    <td>2022-10-24 22:52:51</td>
+                    <td>2022-10-18 00:20:24</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>Posiadam pralkę Samsung EcoBubble WW90T534DAE zakupioną około 10 dni temu. Do jej zalet niewątpliwie można zaliczyć: funkcjonalność, bardzo wysoka kultura pracy posiada szereg programów pracy, każdy z programów posiada swój czas pracy, dostosowany do rodzaju pranych rzeczy. Kolejna zaletą pralki jest funkcja &quot;dołóż pranie&quot; która przydaje się gdy zapomnimy dodać cześć prania. Proces wirowania przebiega zaskakująco cicho, po poprawnym wypoziomowaniu pralka nie wibruje i nie przemieszcza sie. Wyświetlacz jest bardzo czytelny i przekazuje wszystkie wymagane informacje, takie jak czas prania, temperatura prania, prędkość wirowania oraz liczbę cyklów płukania. Wybór program mix pozwala dostosować pranie do indywidualnych potrzeb i dostępnego czasu. Natomiast zdalne sterowanie pralką ze smartphona to coś wspaniałego! #PromocjaSamsungLaczProduktyDlaWygody</td>
+                    <td>efektywność,funkcjonalność,głośność pracy,ładowność,stabilność pracy,zużycie energii</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>16602184</td>
+                    <td>wuodi</td>
+                    <td>Polecam</td>
+                    <td>5/5</td>
+                    <td>Opinia potwierdzona zakupem</td>
+                    <td>2022-10-06 14:23:44</td>
+                    <td>2022-09-24 17:10:57</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>#PromocjaSamsungLaczProduktyDlaWygody Kupno pralki czy suszarki to niełatwa decyzja. Jest masa marek na rynku i w określonym budżecie każdy szuka dla siebie jak najlepszego sprzętu. Ja ze swojej strony szukałem pralki z autodozowaniem, z małym poborem prądy, znanej marki, dużą ilością pozytywnych opinii, &quot;inteligentną&quot; z możliwością połączenia ze smartfonem, czyli NOWOCZESNĄ. Pierwsze wyszukiwanie padło na model WW90T534DAE i pomimo usilnych prób znalezienia konkurencji takiej nie było. Pralka od Samsunga ma to co powinna mieć każda nowa pralka z roku 2022 i tego się trzymajmy. Polecam!</td>
+                    <td>efektywność,głośność pracy,ładowność,zużycie energii</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>16594176</td>
+                    <td>wuodi</td>
+                    <td>Polecam</td>
+                    <td>5/5</td>
+                    <td>Opinia potwierdzona zakupem</td>
+                    <td>2022-10-04 22:16:37</td>
+                    <td>2022-09-24 17:38:44</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>#PromocjaSamsungLaczProduktyDlaWygody Kupno pralki czy suszarki to niełatwa decyzja. Jest masa marek na rynku i w określonym budżecie każdy szuka dla siebie jak najlepszego sprzętu. Ja ze swojej strony szukałem pralki z autodozowaniem, z małym poborem prądy, znanej marki, dużą ilością pozytywnych opinii, &quot;inteligentną&quot; z możliwością połączenia ze smartfonem, czyli NOWOCZESNĄ. Pierwsze wyszukiwanie padło na model WW90T534DAE i pomimo usilnych prób znalezienia konkurencji takiej nie było. Pralka od Samsunga ma to co powinna mieć każda nowa pralka z roku 2022 i tego się trzymajmy. Polecam!</td>
+                    <td>efektywność,głośność pracy,ładowność,zużycie energii</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>16616765</td>
+                    <td>atoheca</td>
+                    <td>Polecam</td>
+                    <td>5/5</td>
+                    <td>Opinia potwierdzona zakupem</td>
+                    <td>2022-10-11 09:26:40</td>
+                    <td>2022-09-21 23:18:04</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>#PromocjaSamsungLaczProduktyDlaWygody
+            Pralka kupiona, bo poprzednia chyba już kończyła swój żywot. Po kilku dniach została dostarczona i po prostu niebo a ziemia. Po pierwsze nowy Samsung jest bardzo ładny. Żona wybrała ten model, bo podobała jej się ta czarna część panelu sterowania. Ja sprawdziłem parametry i okazało się, że to wybór idealny. Po drugie jest cichutka, przynajmniej my tak to odbieramy przez kontrast z poprzednią, ale myślę, że obiektywnie jest cicha. Można podłączyć do smartfona, ma funkcje parowe, ecobubble i w ogóle. Możemy polecić!</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>13491577</td>
+                    <td>j...i</td>
+                    <td>Polecam</td>
+                    <td>5/5</td>
+                    <td>Opinia potwierdzona zakupem</td>
+                    <td>2020-12-02 20:45:37</td>
+                    <td>2020-11-20 12:12:44</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>Doskonały</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>16769148</td>
+                    <td>s...s</td>
+                    <td>Polecam</td>
+                    <td>5/5</td>
+                    <td>Opinia potwierdzona zakupem</td>
+                    <td>2022-11-20 15:45:59</td>
+                    <td>2022-10-31 15:41:41</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>Dla mnie zakup fantastyczny: pralka pracuje dość cicho, nawet przy wirowaniu; ma pojemny bęben; opcja dozowania jest fantastyczna - nie muszę uważać ile wlewam płynu; ma świetne zabezpieczenie w przypadku prania bez wirowania (blokada nie puści, jeśli nie wypompuje się wody); funkcja pary jest nowością, którą jeszcze testujemy; bardzo bogaty pakiet programów (mp. ubranka dziecięce, pościel czy ręczniki). Praktycznie przy każdym programie można zmienić ustawienia dogodne dla nas.</td>
+                    <td>efektywność,głośność pracy,ładowność,zużycie energii</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>17340502</td>
+                    <td>Anetta</td>
+                    <td>Polecam</td>
+                    <td>4/5</td>
+                    <td>Opinia potwierdzona zakupem</td>
+                    <td>2023-03-30 11:45:23</td>
+                    <td>2023-03-23 19:31:30</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>Działa. Pierwsze pranie duży wsad problemy z wagą przy wirowaniu. Bardzo stabilne nóżki, cicha praca. Troszkę topornie opisane łączenie z wifi. Dawkowanie detergentów opisane na zasadzie 1.2.3. lub nic. Bosch tu powala Samsunga na kolana. Obsługa w komórce też powierzchowna tu LG lepsze. Przeważyło w moim przypadku te 5cm głębokości dla wsadu 9kg i koniecznie chcieliśmy autodose. W cenie 2 tys za pralkę Samsung wygrał.</td>
+                    <td>efektywność,głośność pracy,ładowność,stabilność pracy,zużycie energii</td>
+                    <td>funkcjonalność</td>
+                </tr>
+                <tr>
+                    <td>16899175</td>
+                    <td>m...a</td>
+                    <td>Polecam</td>
+                    <td>4/5</td>
+                    <td>Opinia potwierdzona zakupem</td>
+                    <td>2022-12-18 23:59:07</td>
+                    <td>2022-12-02 17:29:11</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>Jak na razie dobrze. Nie radzi sobie z wirowaniem dużych tkanin (pled). &quot;Zdalne uruchamianie&quot; pozwala jedynie zaprogramowac cykl prania ale jego uruchomienie wymaga wciśnięcia przycisku na pralce. Przycisk reaguje nawet przy delikatnym przypadkowym dotknięciu. Pobór wody wydaje się dużo mniejszy niż przy poprzedniej pralce i zobaczymy jak z poborem mocy, ale cichutka i dobrze wiruje</td>
+                    <td>efektywność,głośność pracy,ładowność</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>16372243</td>
+                    <td>m...1</td>
+                    <td>Polecam</td>
+                    <td>5/5</td>
+                    <td>Opinia potwierdzona zakupem</td>
+                    <td>2022-07-30 18:46:26</td>
+                    <td>2022-06-30 03:48:23</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>Miałem Samsunga, był niezawodny więc znowu postawiłem na tą firmę i znowu się nie zawiodłem. W dzisiejszych czasach i za te pieniądze?  - Bardzo dobry wyrób, złożony w Polsce. Oszczędna, cicha, zużywa mało wody , łatwa w obsłudze,dużo programów + &quot;dodatki&quot; ale wszystko jasne i czytelne. Znowu jestem zadowolony...</td>
+                    <td>efektywność,funkcjonalność,głośność pracy,ładowność,stabilność pracy,zużycie energii</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>17023363</td>
+                    <td>g...t</td>
+                    <td>Polecam</td>
+                    <td>5/5</td>
+                    <td>Opinia potwierdzona zakupem</td>
+                    <td>2023-01-16 22:10:49</td>
+                    <td>2022-12-26 21:31:34</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>Jestem bardzo zadowolona z zakupu. Najbardziej cieszy mnie duża ładownośćpralki, automatyka wagowa i automatyczne pobieranie detergentów, ale także połączenie z Iphonem, co umożliwia monitorowanie całego procesu. Jak do tej pory jest to moja najlepsza pralka. Jakość prania bez zarzutu.</td>
+                    <td>efektywność,głośność pracy,ładowność,zużycie energii</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>14610220</td>
+                    <td>Lidia</td>
+                    <td>Polecam</td>
+                    <td>4,5/5</td>
+                    <td>Opinia potwierdzona zakupem</td>
+                    <td>2021-06-16 21:28:23</td>
+                    <td>2021-06-07 22:52:49</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>W porównaniu do poprzedniej pralki ta jest super.
+            Jedyny problem dla mnie to że czasami mam wrażenie że za długo pierze mimo pokazanego czasu.</td>
+                    <td>efektywność,funkcjonalność,głośność pracy,ładowność,stabilność pracy,zużycie energii</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>16595421</td>
+                    <td>j...s</td>
+                    <td>Polecam</td>
+                    <td>5/5</td>
+                    <td>Opinia potwierdzona zakupem</td>
+                    <td>2022-10-05 09:52:20</td>
+                    <td>2022-09-28 09:26:30</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>Bardzo fajna, cicha pralka. Na dzień dzisiejszy jesteśmy bardzo zadowoleni. Bardzo praktyczne dozowniki na proszek i płyn. Serdecnie polecam:) #PromocjaSamsungLaczProduktyDlaWygody</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>17373384</td>
+                    <td>Użytkownik Ceneo</td>
+                    <td>Polecam</td>
+                    <td>4,5/5</td>
+                    <td></td>
+                    <td>2023-04-06 23:13:42</td>
+                    <td></td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>Pralka posiada w zasadzie komplet najnowszych funkcji jakich ktoś mógłby potrzebować - autodozowanie (!!!), programy automatyczne, dużą ładowność, EcoBubble, panel kontrolny który wygląda na estetyczny przełom (dotychczasowy styl &quot;pokrętło z masą etykiet przy każdej z pozycji&quot; ma już z 30 lat!), sterowanie przez telefon, integracja z suszarką. Wyglądowo pralka też się dobrze prezentuje, szczególnie od strony wnętrza - wzór diamentów robi robotę. Sam nie mierzyłem, ale wygląda na to że w cyklu prania zużywa zaskakująco mało wody.
+            Oby tylko przetrwała jak najdłużej.
+            #EnergooszczedneUrzadzeniaPromocjaSamsung</td>
+                    <td>estetyka,ładowność,zużycie energii</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>15985910</td>
+                    <td>m...k</td>
+                    <td>Polecam</td>
+                    <td>4/5</td>
+                    <td>Opinia potwierdzona zakupem</td>
+                    <td>2022-04-20 22:05:35</td>
+                    <td>2022-04-14 01:02:31</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>Przydało by się aby wyświetlacz pokazywał również modyfikacje ręczne programu np. wybór podawania detergentu z wyłączeniem automatycznego podajnika.</td>
+                    <td>efektywność,głośność pracy,ładowność,zużycie energii</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>16687079</td>
+                    <td>p...u</td>
+                    <td>Polecam</td>
+                    <td>5/5</td>
+                    <td>Opinia potwierdzona zakupem</td>
+                    <td>2022-10-28 09:16:26</td>
+                    <td>2022-10-18 14:10:24</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>Jest bardzo ładna, opis funkcji jest bardzo czytelny, duża pojemność prania przy przy małym zużyciu prądu.
+            Po prostu jest to produkt bardzo dobry.</td>
+                    <td>efektywność,głośność pracy,ładowność,zużycie energii</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>16300356</td>
+                    <td>i...k</td>
+                    <td>Polecam</td>
+                    <td>5/5</td>
+                    <td>Opinia potwierdzona zakupem</td>
+                    <td>2022-07-09 21:54:06</td>
+                    <td>2022-06-17 12:18:48</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>Pralka spełnia moje oczekiwania. Pierze cichutko, pranie kończy melodyjką.Jestem bardzo zadowolona z zakupu. Szczerze polecam</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>16855393</td>
+                    <td>b...8</td>
+                    <td>Polecam</td>
+                    <td>5/5</td>
+                    <td>Opinia potwierdzona zakupem</td>
+                    <td>2022-12-09 09:10:49</td>
+                    <td>2022-11-07 08:03:10</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>Świetnie dopiera, duzo opcji prania , sama dozuje ilość płynu do prania i plukania</td>
+                    <td>efektywność,głośność pracy,ładowność,zużycie energii</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>16198251</td>
+                    <td>b...a</td>
+                    <td>Polecam</td>
+                    <td>5/5</td>
+                    <td>Opinia potwierdzona zakupem</td>
+                    <td>2022-06-10 21:54:33</td>
+                    <td>2022-05-22 20:21:08</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>Bardzo cicha, łatwa obsługa,  na chwilę obecną nie mam zastrzeżeń.</td>
+                    <td>efektywność,funkcjonalność,głośność pracy,ładowność,zużycie energii</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>16425188</td>
+                    <td>p...8</td>
+                    <td>Polecam</td>
+                    <td>4/5</td>
+                    <td>Opinia potwierdzona zakupem</td>
+                    <td>2022-08-16 20:54:30</td>
+                    <td>2022-07-24 22:45:51</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>Brak pcji zmiany kierunku otwarcia drzwi  a po za tym wszystko ok</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>14627989</td>
+                    <td>p...l</td>
+                    <td>Polecam</td>
+                    <td>5/5</td>
+                    <td>Opinia potwierdzona zakupem</td>
+                    <td>2021-06-21 23:35:26</td>
+                    <td>2021-06-03 08:50:50</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>Bardzo fajna pralka, cichutka, duży wybór programów piorących 😊</td>
+                    <td>efektywność,funkcjonalność,głośność pracy,ładowność,stabilność pracy,zużycie energii</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>16268271</td>
+                    <td>b...9</td>
+                    <td>Polecam</td>
+                    <td>5/5</td>
+                    <td>Opinia potwierdzona zakupem</td>
+                    <td>2022-06-30 11:06:25</td>
+                    <td>2022-06-11 20:39:53</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>Po kilku praniach mogę polecić tę produkt z czystym sumieniem.</td>
+                    <td></td>
+                    <td>efektywność,funkcjonalność,głośność pracy,ładowność,stabilność pracy,zużycie energii</td>
+                </tr>
+                <tr>
+                    <td>14504692</td>
+                    <td>m...3</td>
+                    <td>Polecam</td>
+                    <td>5/5</td>
+                    <td>Opinia potwierdzona zakupem</td>
+                    <td>2021-05-24 17:09:01</td>
+                    <td>2021-04-23 21:33:58</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>jak zwykle wszystko naj od Samsung .........................</td>
+                    <td>efektywność,głośność pracy,ładowność,zużycie energii</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>16709546</td>
+                    <td>v...o</td>
+                    <td>Polecam</td>
+                    <td>5/5</td>
+                    <td>Opinia potwierdzona zakupem</td>
+                    <td>2022-11-03 22:46:16</td>
+                    <td>2022-10-24 09:14:57</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>wszystko poszło bardzo dobrze. towar zgodnie z opisem.</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>14426445</td>
+                    <td>g...r</td>
+                    <td>Polecam</td>
+                    <td>5/5</td>
+                    <td>Opinia potwierdzona zakupem</td>
+                    <td>2021-05-07 22:35:28</td>
+                    <td>2021-04-30 00:17:37</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>Super sprzęt, i intuicyjna obsługa, dobrze wykonana</td>
+                    <td>efektywność,głośność pracy,ładowność,zużycie energii</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>15603552</td>
+                    <td>z...t</td>
+                    <td>Polecam</td>
+                    <td>5/5</td>
+                    <td>Opinia potwierdzona zakupem</td>
+                    <td>2022-01-24 19:19:01</td>
+                    <td>2022-01-12 22:12:42</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>Pralka w swoim przedziale cenowym godna polecenia.</td>
+                    <td>ładowność</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>14435405</td>
+                    <td>k...n</td>
+                    <td>Polecam</td>
+                    <td>5/5</td>
+                    <td>Opinia potwierdzona zakupem</td>
+                    <td>2021-05-10 20:59:54</td>
+                    <td>2021-04-19 00:19:32</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>Pralka spełniła całkowicie moje oczekiwania.</td>
+                    <td>efektywność,funkcjonalność,głośność pracy,ładowność,stabilność pracy,zużycie energii</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>17362890</td>
+                    <td>b...0</td>
+                    <td>Polecam</td>
+                    <td>5/5</td>
+                    <td>Opinia potwierdzona zakupem</td>
+                    <td>2023-04-05 07:05:51</td>
+                    <td>2023-03-14 14:58:26</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>Super programy, rewelacja higieniczna para</td>
+                    <td>efektywność,głośność pracy,ładowność,zużycie energii</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>17075248</td>
+                    <td>k...s</td>
+                    <td>Polecam</td>
+                    <td>5/5</td>
+                    <td>Opinia potwierdzona zakupem</td>
+                    <td>2023-01-28 14:55:34</td>
+                    <td>2022-10-03 16:13:44</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>Bardzo udany zakup. Świetne urządzenie</td>
+                    <td>efektywność,głośność pracy,ładowność,zużycie energii</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>14440124</td>
+                    <td>j...i</td>
+                    <td>Polecam</td>
+                    <td>5/5</td>
+                    <td>Opinia potwierdzona zakupem</td>
+                    <td>2021-05-11 20:37:33</td>
+                    <td>2021-04-26 18:47:32</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>Bardzo dobry stosunek jakości do ceny.</td>
+                    <td>efektywność,głośność pracy,ładowność,zużycie energii</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>17014916</td>
+                    <td>b...o</td>
+                    <td>Polecam</td>
+                    <td>4,5/5</td>
+                    <td>Opinia potwierdzona zakupem</td>
+                    <td>2023-01-13 17:45:34</td>
+                    <td>2023-01-07 09:15:17</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>doskonałe stosunek ceny do jakości</td>
+                    <td>efektywność,głośność pracy,ładowność,zużycie energii</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>16336736</td>
+                    <td>j...6</td>
+                    <td>Polecam</td>
+                    <td>5/5</td>
+                    <td>Opinia potwierdzona zakupem</td>
+                    <td>2022-07-20 14:28:20</td>
+                    <td>2022-07-05 11:11:07</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>Jestem zadowolony z wyboru zakupu.</td>
+                    <td>efektywność,głośność pracy,ładowność,zużycie energii</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>16158068</td>
+                    <td>j...4</td>
+                    <td>Polecam</td>
+                    <td>5/5</td>
+                    <td>Opinia potwierdzona zakupem</td>
+                    <td>2022-06-01 18:19:41</td>
+                    <td>2022-05-02 11:48:18</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>funkcjonalna, ekonomiczna</td>
+                    <td>efektywność,funkcjonalność,głośność pracy,ładowność,stabilność pracy,zużycie energii</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>17120707</td>
+                    <td>w...0</td>
+                    <td>Polecam</td>
+                    <td>5/5</td>
+                    <td>Opinia potwierdzona zakupem</td>
+                    <td>2023-02-08 20:09:19</td>
+                    <td>2023-01-25 20:35:20</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>Dobrze wykonana cicha</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>17094581</td>
+                    <td>d...z</td>
+                    <td>Polecam</td>
+                    <td>5/5</td>
+                    <td>Opinia potwierdzona zakupem</td>
+                    <td>2023-02-02 11:15:23</td>
+                    <td>2023-01-18 22:47:23</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>Dostawa i obsluga super</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>16250599</td>
+                    <td>p...y</td>
+                    <td>Polecam</td>
+                    <td>5/5</td>
+                    <td>Opinia potwierdzona zakupem</td>
+                    <td>2022-06-25 13:46:17</td>
+                    <td>2022-06-03 09:39:44</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>ok bardzo dobry produkt</td>
+                    <td>efektywność,głośność pracy,ładowność,zużycie energii</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>16108555</td>
+                    <td>5...h</td>
+                    <td>Polecam</td>
+                    <td>5/5</td>
+                    <td>Opinia potwierdzona zakupem</td>
+                    <td>2022-05-20 11:10:30</td>
+                    <td>2022-05-10 19:43:29</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>To nowoczesny produkt.</td>
+                    <td>efektywność,głośność pracy,ładowność,zużycie energii</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>16472329</td>
+                    <td>Michał</td>
+                    <td>Polecam</td>
+                    <td>5/5</td>
+                    <td>Opinia potwierdzona zakupem</td>
+                    <td>2022-08-31 09:46:09</td>
+                    <td>2022-07-17 10:41:19</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>Bardzo dobrze pierze.</td>
+                    <td>efektywność,ładowność,zużycie energii</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>16316763</td>
+                    <td>m...1</td>
+                    <td>Polecam</td>
+                    <td>5/5</td>
+                    <td>Opinia potwierdzona zakupem</td>
+                    <td>2022-07-14 12:09:37</td>
+                    <td>2022-07-04 23:05:23</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>cicha,inteligentna:)</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>14733443</td>
+                    <td>o...g</td>
+                    <td>Polecam</td>
+                    <td>5/5</td>
+                    <td>Opinia potwierdzona zakupem</td>
+                    <td>2021-07-17 09:17:45</td>
+                    <td>2021-06-25 05:38:18</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>Jak dla mnie suprer</td>
+                    <td>efektywność,głośność pracy,ładowność,zużycie energii</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>15660378</td>
+                    <td>m...r</td>
+                    <td>Polecam</td>
+                    <td>5/5</td>
+                    <td>Opinia potwierdzona zakupem</td>
+                    <td>2022-02-04 21:29:06</td>
+                    <td>2022-01-05 13:55:20</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>Polecam wszystkim</td>
+                    <td>efektywność,głośność pracy,ładowność,zużycie energii</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>15144625</td>
+                    <td>r...1</td>
+                    <td>Polecam</td>
+                    <td>5/5</td>
+                    <td>Opinia potwierdzona zakupem</td>
+                    <td>2021-10-29 18:27:06</td>
+                    <td>2021-10-22 17:03:00</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>Pralka super</td>
+                    <td>efektywność,głośność pracy,ładowność,zużycie energii</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>13388852</td>
+                    <td>k...5</td>
+                    <td>Polecam</td>
+                    <td>5/5</td>
+                    <td>Opinia potwierdzona zakupem</td>
+                    <td>2020-11-17 00:06:02</td>
+                    <td>2020-11-03 21:34:11</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>Wszystko ok</td>
+                    <td>efektywność,funkcjonalność,głośność pracy,ładowność,stabilność pracy,zużycie energii</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>16711366</td>
+                    <td>k...6</td>
+                    <td>Polecam</td>
+                    <td>5/5</td>
+                    <td>Opinia potwierdzona zakupem</td>
+                    <td>2022-11-04 11:04:23</td>
+                    <td>2022-10-04 11:44:53</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>Polecam!!!</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>15652737</td>
+                    <td>m...r</td>
+                    <td>Polecam</td>
+                    <td>4,5/5</td>
+                    <td>Opinia potwierdzona zakupem</td>
+                    <td>2022-02-03 18:02:03</td>
+                    <td>2022-01-03 18:27:32</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>Polecam</td>
+                    <td>efektywność,głośność pracy,ładowność,zużycie energii</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>17081956</td>
+                    <td>k...9</td>
+                    <td>Polecam</td>
+                    <td>5/5</td>
+                    <td>Opinia potwierdzona zakupem</td>
+                    <td>2023-01-31 08:00:55</td>
+                    <td>2023-01-08 16:43:09</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>Polecam</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>15572694</td>
+                    <td>sonicja</td>
+                    <td>Polecam</td>
+                    <td>5/5</td>
+                    <td>Opinia potwierdzona zakupem</td>
+                    <td>2022-01-17 20:41:54</td>
+                    <td>2021-12-31 10:39:28</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>Jest OK</td>
+                    <td>efektywność,funkcjonalność,głośność pracy,ładowność,stabilność pracy,zużycie energii</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>16180626</td>
+                    <td>p...i</td>
+                    <td>Polecam</td>
+                    <td>5/5</td>
+                    <td>Opinia potwierdzona zakupem</td>
+                    <td>2022-06-07 17:35:58</td>
+                    <td>2022-05-26 19:15:01</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>Dobra</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>16013269</td>
+                    <td>m...l</td>
+                    <td>Polecam</td>
+                    <td>5/5</td>
+                    <td>Opinia potwierdzona zakupem</td>
+                    <td>2022-04-27 11:04:41</td>
+                    <td>2022-04-20 17:55:08</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>Super</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>15423436</td>
+                    <td>w...k</td>
+                    <td>Polecam</td>
+                    <td>5/5</td>
+                    <td>Opinia potwierdzona zakupem</td>
+                    <td>2021-12-24 22:09:49</td>
+                    <td>2021-12-11 07:15:18</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>super</td>
+                    <td>efektywność,głośność pracy,ładowność,zużycie energii</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>15363215</td>
+                    <td>w...a</td>
+                    <td>Polecam</td>
+                    <td>5/5</td>
+                    <td>Opinia potwierdzona zakupem</td>
+                    <td>2021-12-14 17:23:17</td>
+                    <td>2021-11-22 15:10:23</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>super</td>
+                    <td>efektywność,głośność pracy,ładowność,zużycie energii</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>16270351</td>
+                    <td>m...l</td>
+                    <td>Polecam</td>
+                    <td>5/5</td>
+                    <td>Opinia potwierdzona zakupem</td>
+                    <td>2022-06-30 21:03:06</td>
+                    <td>2022-06-16 17:16:21</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>Ok.</td>
+                    <td>efektywność,funkcjonalność,głośność pracy,ładowność,stabilność pracy,zużycie energii</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>17372451</td>
+                    <td>a...a</td>
+                    <td>Polecam</td>
+                    <td>4,5/5</td>
+                    <td>Opinia potwierdzona zakupem</td>
+                    <td>2023-04-06 20:39:51</td>
+                    <td>2023-03-23 17:34:12</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>ok</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>16463725</td>
+                    <td>l...2</td>
+                    <td>Polecam</td>
+                    <td>5/5</td>
+                    <td>Opinia potwierdzona zakupem</td>
+                    <td>2022-08-28 16:58:10</td>
+                    <td>2022-07-28 20:28:48</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>Ok</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>16076624</td>
+                    <td>c...a</td>
+                    <td>Polecam</td>
+                    <td>5/5</td>
+                    <td>Opinia potwierdzona zakupem</td>
+                    <td>2022-05-12 15:39:50</td>
+                    <td>2022-04-26 15:26:34</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>Ok</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>16076622</td>
+                    <td>c...a</td>
+                    <td>Polecam</td>
+                    <td>5/5</td>
+                    <td>Opinia potwierdzona zakupem</td>
+                    <td>2022-05-12 15:39:32</td>
+                    <td>2022-04-25 18:55:40</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>Ok</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>15340110</td>
+                    <td>Andrzej</td>
+                    <td>Polecam</td>
+                    <td>5/5</td>
+                    <td>Opinia potwierdzona zakupem</td>
+                    <td>2021-12-09 23:08:05</td>
+                    <td>2021-11-22 21:16:35</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>OK</td>
+                    <td>efektywność,głośność pracy,ładowność,zużycie energii</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>14991572</td>
+                    <td>Użytkownik Ceneo</td>
+                    <td>Polecam</td>
+                    <td>5/5</td>
+                    <td></td>
+                    <td>2021-09-23 22:10:05</td>
+                    <td></td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>Polecam tą pralkę! Posiadam ją od kilku dni i aż chce się w niej prać codziennie! 1400 obrotów robi swoje - suszarka nie musi już tak długo suszyć bo pranie jest prawie w pełni suche. Bardzo cicha, można włączać nawet na noc przy otwartych drzwiach do łazienki. Do tego sterowanie z telefonu. Dużo programów do wyboru, a w dodatku zapamiętuje te najbardziej używane. Świetny design - aż chce się ją wystawić na środek mieszkania na korytarz. #AkcjaLaczProduktyDlaWygody</td>
+                    <td>efektywność,głośność pracy,ładowność,zużycie energii</td>
+                    <td></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <td>opinion_id</td>
+                <td>author</td>
+                <td>recommendation</td>
+                <td>score</td>
+                <td>purchased</td>
+                <td>published_at</td>
+                <td>purchased_at</td>
+                <td>thumbs_up</td>
+                <td>thumbs_down</td>
+                <td>content</td>
+                <td>pros</td>
+                <td>cons</td>
+            </tfoot>
+        </table>
+            
+        <div class="buttons">
+            <a class="btn btn-light" href="../opinions/wykresy.html" role="button">Pobierz Wykresy</a>
+            <a class="btn btn-light" href="../opinions/96685108.json" role="button">Pobierz plik JSON</a>
+        </div>         
+
+    <footer class="container text-center mt-5 pt-2 border-top border-white">
+        (c) Kutylovskaya Uliana, Uniwersytet Ekonomiczny w Krakowie
+    </footer>
+
+</body>
+</html>
