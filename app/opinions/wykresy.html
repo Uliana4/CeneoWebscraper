@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <title>CeneoWebScraper - Kurylovskaya Uliana - wykresy</title>
+    </head>
+
+    <body>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                <a class="navbar-brand" href="#">CeneoWebScraper</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="../templates/strona_glowna.html">Strona główna</a></li>
+                    <li><a href="../templates/ekstrakcja.html">Ekstrakcja opinii</a></li>
+                    <li><a href="../templates/lista_produktow.html">Lista produktów</a></li>
+                    <li><a href="../templates/autor.html">O autorze</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="shadow p-3 mb-5 bg-white rounded">
+                <div>
+                    <canvas id="myChart"></canvas>
+                </div>
+                  
+                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                
+                    <script>
+                        const ctx2 = document.getElementById('myChart');
+                    
+                        new Chart(ctx2, {
+                        type: 'pie',
+                        data: {
+                            labels: ['Opinie przydatne', 'Opinie nieprzydatne'],
+                            datasets: [{
+                            label: 'thumbs',
+                            data: [62, 0],
+                            backgroundColor: [
+                                'rgb(158, 206, 233)',
+                                'rgb(233, 158, 158)'
+                            ],
+                            hoverOffset:4
+                            }]
+                        }
+                        });                  
+                    </script>
+            </div>
+        </div> 
+
+        <div class="container">
+            <div class="shadow p-3 mb-5 bg-white rounded">
+                <div>
+                    <canvas id="myChart_01"></canvas>
+                </div>
+                
+                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                
+                    <script>
+                        const ctx1 = document.getElementById('myChart_01');
+                        new Chart(ctx1, {
+                        type: 'bar',
+                        data: {
+                            labels: ['5.0', '4.5', '4.0'],
+                            datasets: [{
+                            label: 'thumbs',
+                            data: [53, 5, 4],
+                            borderWidth: 1
+                            }]
+                        },
+                        options: {
+                            scales: {
+                            y: {
+                                beginAtZero: true
+                            }
+                            }
+                        }
+                        });
+                    </script>
+            </div>
+        </div>    
+        
+    </body>  
+</html>
