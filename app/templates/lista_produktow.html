@@ -1,30 +1,6 @@
-<!DOCTYPE html>
-<html lang="pl">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <title>Lista produktów - Uliana Kutylovskaya</title>
-</head>
-
-<body>
-  
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <div class="navbar-header">
-            <a class="navbar-brand" href="#">CeneoWebScraper</a>
-            </div>
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="strona_glowna.html">Strona główna</a></li>
-                <li><a href="ekstrakcja.html">Ekstrakcja opinii</a></li>
-                <li><a href="lista_produktow.html">Lista produktów</a></li>
-                <li><a href="autor.html">O autorze</a></li>
-            </ul>
-        </div>
-    </nav>
-
+{% extends 'base.html' %}
+{% block title %}Lista produktów{% endblock %}        
+{% block content %}        
     <header class="container">
         <h1 class="text-center">Lista Produktów</h1>
     </header>
@@ -53,10 +29,9 @@
             </tr>
         </tbody>
     </table>
+    {% endblock %}
 
     <footer class="container text-center mt-5 pt-2 border-top border-white">
         (c) Kutylovskaya Uliana, Uniwersytet Ekonomiczny w Krakowie
     </footer>
-      
-</body>
-</html>
+    {% endblock %} 

@@ -1,80 +1,44 @@
-<!DOCTYPE html>
-<html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap"></script>
-    <title>Ekstrakcja opinii - Uliana Kutylovskaya</title>
-</head>
-
-<body>
-  
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <div class="navbar-header">
-            <a class="navbar-brand" href="#">CeneoWebScraper</a>
-            </div>
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="strona_glowna.html">Strona główna</a></li>
-                <li><a href="ekstrakcja.html">Ekstrakcja opinii</a></li>
-                <li><a href="lista_produktow.html">Lista produktów</a></li>
-                <li><a href="autor.html">O autorze</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <header class="container">
-        <h1 class="text-center">Ekstrakcja opinii</h1>
-    </header>
-
-    <div class="container">
-        <div class="row my-5">
-            <div class="col-4"></div>
-        <div class="col-4">
-            <div class="justify-content-center">
-            <div class="shadow p-3 mb-5 bg-white rounded">
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text"> id produktu: </span>
-                    </div>
-                    <input id="product_id" type="text" class="form-control" placeholder="Np. 71654231" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                    <button class="btn btn-lg btn-dark btn-block" type="submit" onclick=toCeneo()> Wyszukaj </button>
-                    </div>
+{% extends 'base.html' %}
+{% block title %}Ekstrakcja opinii{% endblock %}        
+{% block content %}           
+<div class="container">
+    <div class="row my-5">
+        <div class="col-4"></div>
+    <div class="col-4">
+        <div class="justify-content-center">
+        <div class="shadow p-3 mb-5 bg-white rounded">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text"> id produktu: </span>
                 </div>
-            </div>
+                <input id="product_id" type="text" class="form-control" placeholder="Np. 71654231" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                <button class="btn btn-lg btn-dark btn-block" type="submit" onclick=toCeneo()> Wyszukaj </button>
+                </div>
             </div>
         </div>
         </div>
     </div>
-
-    <script>
-        function  toCeneo(){
-            var id = document.getElementById("product_id").value;
-            if (isNaN(id) || id == "") {
-                location.reload();
-                alert("Błędny kod");
-            }
-            else{
-            var url = "https://www.ceneo.pl/" + id;
-            window.location.href = url;
-            }
+    </div>
+</div>
+<script>
+    function  toCeneo(){
+        var id = document.getElementById("product_id").value;
+        if (isNaN(id) || id == "") {
+            location.reload();
+            alert("Błędny kod");
         }
-    </script>
+        else{
+        var url = "https://www.ceneo.pl/" + id;
+        window.location.href = url;
+        }
+    }
+</script>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     
-    <footer class="container text-center mt-5 pt-2 border-top border-white">
-        (c) Kutylovskaya Uliana, Uniwersytet Ekonomiczny w Krakowie
-    </footer>
-      
-</body>
-</html>
+<footer class="container text-center mt-5 pt-2 border-top border-white">
+    (c) Kutylovskaya Uliana, Uniwersytet Ekonomiczny w Krakowie
+</footer>
+{% endblock %}

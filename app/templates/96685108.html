@@ -1,39 +1,6 @@
-<!DOCTYPE html>
-<html lang="pl">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
-        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-        <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
-        <title>CeneoWebScraper - Kutylovskaya Uliana</title>
-        <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
-        <script>
-            $(document).ready(function () {
-                $('#example').DataTable();
-            });
-        </script>
-</head>
-
-<body>
-    
-    
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <div class="navbar-header">
-            <a class="navbar-brand" href="#">CeneoWebScraper</a>
-            </div>
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="strona_glowna.html">Strona główna</a></li>
-                <li><a href="ekstrakcja.html">Ekstrakcja opinii</a></li>
-                <li><a href="lista_produktow.html">Lista produktów</a></li>
-                <li><a href="autor.html">O autorze</a></li>
-            </ul>
-        </div>
-    </nav>
-
+{% extends 'base.html' %}
+{% block title %}Opinie o produkcie{% endblock %} 
+{% block content %}  
     <div class="my-5">
         <table id="example" class="display" style="width:100%">
             <thead>
@@ -951,7 +918,18 @@
                 <td>cons</td>
             </tfoot>
         </table>
-            
+        {% endblock %}
+                 
+        {% block script %} 
+
+        <script>
+            $(document).ready(function () {
+                $('#example').DataTable();
+            });
+        </script>
+
+        {% endblock %}
+        
         <div class="buttons">
             <a class="btn btn-light" href="../opinions/wykresy.html" role="button">Pobierz Wykresy</a>
             <a class="btn btn-light" href="../opinions/96685108.json" role="button">Pobierz plik JSON</a>
@@ -960,6 +938,4 @@
     <footer class="container text-center mt-5 pt-2 border-top border-white">
         (c) Kutylovskaya Uliana, Uniwersytet Ekonomiczny w Krakowie
     </footer>
-
-</body>
-</html>
+{% endblock %}

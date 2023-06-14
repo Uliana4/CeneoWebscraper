@@ -7,13 +7,17 @@ def index():
     return render_template('strona_glowna.html')
 
 @app.route('/ekstrakcja')
-def index1():
+def extract():
     return render_template("ekstrakcja.html")
 
 @app.route('/products')
-def index2():
+def products():
     return render_template("lista_produktow.html")
 
+@app.route('/product')
+def product():
+    return render_template("96685108.html")
+
 @app.route('/O_AUTORZE')
-def index3():
+def autor():
     return render_template("autor.html")

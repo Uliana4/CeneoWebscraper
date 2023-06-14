@@ -1,23 +1,6 @@
-<!DOCTYPE html>
-<html lang="pl">
-<head>
-  <title>CeneoWebScraper- Kutylovskaya Uliana - Autora</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-</head>
-<body>
-
-<div class="container">
-    <h2>O autorze</h2>            
-    <ul class="breadcrumb">
-        <li><a href="strona_glowna.html">Strona główna</a></li>
-        <li class="active">O autorze</li>        
-    </ul>
-</div>
-
+{% extends 'strona_glowna.html' %}
+{% block title %}O autorze projektu{% endblock %}
+{% block content %}
 <div class="container">
     <h2>Kutylovskaya Uliana</h2>  
     <img src="изображение_viber_2023-05-28_13-01-08-962.jpg" class="img-thumbnail" alt="Cinque Terre" width="200" height="200"> 
@@ -39,7 +22,4 @@
             <p class="list-group-item-text">Łyżwiarstwo figurowe, literatura nowoczesna</p>
       </a>
 </div>     
-       
-
-</body>
-</html>
+{% endblock %}
