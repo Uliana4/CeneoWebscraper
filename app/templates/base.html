@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap"></script>
+    <title>Strona Główna</title>
+</head>
+
+<body style="height:1500px">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+        <a class="navbar-brand" href="#">CeneoWebScraper</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="strona_glowna.html">Strona główna</a></li>
+            <li><a href="ekstrakcja.html">Ekstrakcja opinii</a></li>
+            <li><a href="lista_produktow.html">Lista produktów</a></li>
+            <li><a href="autor.html">O autorze</a></li>
+        </ul>
+    </div>
+</nav>
+  
+<div class="container">
+    <h2>
+        {% block title %}
+        {% endblock %}
+    </h2>>
+</div> 
+
+<div class="container">
+    <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#home">Cel aplikacji</a></li>
+        <li><a data-toggle="tab" href="#menu1">Opis działania aplikacji</a></li>
+        <li><a data-toggle="tab" href="#menu2">Zastosowane biblioteki</a></li>
+        <li><a data-toggle="tab" href="#menu3">Zastosowane podejścia</a></li>
+    </ul>
+  
+    <div class="tab-content">
+        <div id="home" class="tab-pane fade in active">
+            <h3>Cel aplikacji:</h3>
+            <p>Celem działania aplikacji jest pobieranie opinii o produktach z serwisu Ceneo.pl. Dla
+                produktu, którego kod zostanie podany jako parametr należy pobrać jego nazwę oraz
+                wszystkie dostępne opinie o nim.</p>
+        </div>
+        <div id="menu1" class="tab-pane fade">
+            <h3>Opis działania aplikacji:</h3>
+            <p>Aplikacja webowa służy do
+                pobierania z serwisu Ceneo.pl opinii o produktach na podstawie ich indywidualnych kodów
+                oraz do wyświetlenia pobranych opinii i podstawowych statystyk o nich.</p>
+        </div>
+        <div id="menu2" class="tab-pane fade">
+            <h3>Zastosowane biblioteki:</h3>
+            <p>
+                <ul>
+                    <li>Requests</li>
+                    <li>BeautifulSoup4</li>
+                    <li>Json</li>
+                    <li>Os</li>
+                    <li>Pandas</li>
+                    <li>Numpy</li>
+                    <li>Matplolib</li>
+                </ul>
+            </p>
+        </div>
+        <div id="menu3" class="tab-pane fade">
+            <h3>Zastosowane podejścia:</h3>
+            <p>W pierwszych etapach
+                pracy wszystkie parametry będą zapisane w kodzie w postaci stałych dosłownych, a w
+                dalszej kolejności zastosowany zostanie prosty tekstowy interfejs pozwalający na
+                wprowadzanie wartości przez użytkownika, który później będzie podstawą do opracowania
+                webowego interfejsu aplikacji.</p>
+        </div>
+    </div>
+</div>
+
+<footer class="container text-center mt-5 pt-2 border-top border-white">
+    (c) Kutylovskaya Uliana, Uniwersytet Ekonomiczny w Krakowie
+</footer>
+{% block script %}
+{% endblockf %}
+</body>
+</html>
