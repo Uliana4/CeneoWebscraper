@@ -1,38 +1,60 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pl">
     <head>
-        <meta charset="UTF-8">
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap"></script>
-        <title>CeneoWebScraper</title>
+        <!-- Datatables CSS -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+		<!-- jQuery & Datatables -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"></script>
+        <!-- Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+        <title>Ceneo Web Scraper</title>
     </head>
-    <body style="height:1500px">
+    <body>
         <header class="container text-center">
             <h1>Ceneo Web Scraper</h1>
         </header>
-        <nav class="navbar navbar-inverse navbar-fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light container" style="background-color: #fff3cd; color: #664d03; border-color: #ffecb5;">
             <div class="container-fluid">
-                <div class="navbar-header">
-                <a class="navbar-brand" href="#">CeneoWebScraper</a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{url_for('index')}}"><i class="bi bi-house-fill"></i> Strona główna</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{url_for('extract')}}"><i class="bi bi-cloud-download-fill"></i>Pobierz produkt</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{url_for('products')}}"><i class="bi bi-list-stars"></i> Lista produktów</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{url_for('author')}}"><i class="bi bi-person-circle"></i> O autorze</a>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="index.html">Strona główna</a></li>
-                    <li><a href="ekstrakcja.html">Ekstrakcja opinii</a></li>
-                    <li><a href="lista_produktow.html">Lista produktów</a></li>
-                    <li><a href="author.html">O autorze</a></li>
-                </ul>
             </div>
         </nav>
-        <footer class="container text-center mt-5 pt-2 border-top border-white">
-            (c) Kutylovskaya Uliana, Uniwersytet Ekonomiczny w Krakowie
+        <div class="container">
+            <div class="row text-center">
+                <div class="col">
+                    <h2>{% block title %}{% endblock %}</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+					{% block content %}{% endblock %}
+                </div>
+            </div>
+        </div>
+        <footer class="container alert alert-warning fixed-bottom">
+            (c) Uliana Kutylovskaya, Uniwersytet Ekonomiczny w Krakowie
         </footer>
-        {% block scripts %}{% endblock %}
+        {% block script %}{% endblock %}
     </body>
 </html>
